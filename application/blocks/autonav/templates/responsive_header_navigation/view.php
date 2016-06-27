@@ -127,9 +127,9 @@ foreach ($navItems as $ni) {
     $name = (isset($translate) && $translate == true) ? t($ni->name) : $ni->name;
     
     if ($ni->hasSubmenu) {
-        echo   '<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">'. $name .'JJJ<span class="caret"></span></button>';
+        echo   '<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">'. $name .'<span class="caret"></span></button>';
     }else{
-        echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $name . 'JJ</a>';
+        echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $name . '</a>';
     }
 
     if ($ni->hasSubmenu) {
